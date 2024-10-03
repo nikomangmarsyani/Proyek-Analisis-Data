@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 # Load data dari CSV
-season_rental_totals = pd.read_csv('dasboard/season_rental_totals.csv') 
-workingday_rental_totals = pd.read_csv('dasboard/workingday_rental_totals.csv') 
+season_rental_totals = pd.read_csv('dashboard/season_rental_totals.csv') 
+workingday_rental_totals = pd.read_csv('dashboard/workingday_rental_totals.csv') 
 
 # Convert tipe data 'dteday' menjadi datetime
 season_rental_totals['dteday'] = pd.to_datetime(season_rental_totals['dteday'])
